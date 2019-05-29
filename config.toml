@@ -1,0 +1,79 @@
+# baseURL = "http://example.org/"
+baseURL = "https://pallcard.github.io/"
+languageCode = "zh-CN"
+title = "刘科个人博客"
+theme = "LeaveIt"
+# paginate = 10 #分页每页记录数
+# DisqusShortname = "刘科" #评论时显示的名字
+Copyright = "All rights reserved - 2019" #版权
+paginate = 12
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = ""
+preserveTaxonomyNames = true
+
+[blackfriday]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
+
+[Permalinks]
+ posts = "/:year/:filename/"
+
+[author]
+  name = "刘科"
+
+[params]
+  subtitle = "hust研一"         # Subtitle
+  description = "hust研一" #加段提升逼格的副标题
+  keywords = "Java,博客"
+  author = "刘科" #文章作者
+  authorlocation = "Wuhan, China" #作者位置
+  authorwebsite = "https://pallcard.github.io/" #作者站点
+  bio= "hust研一" #作者简介
+  avatar = "images/avatar.jpg" #作者头像
+  cdn_url = ""           # Base CDN URL
+  home_mode = "" # post or other
+  google_verification = ""
+  beian="鄂ICP备19006996号-1"
+  baiduAnalytics = ""
+  #license= '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
+
+  # googleAnalyticsUserID = "UA-79101-12" 
+  # Optional RSS-Link, if not provided it defaults to the standard index.xml
+  # RSSLink = "http://feeds.feedburner.com/..."
+  # githubName = "pallcard" #github用户名
+  # twitterName = "" 
+  # facebookName = ""
+  # linkedinName = "liuke" #LinkedIn用户名
+  # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+  # hideHUGOSupport = false #是否显示Hugo水印
+  
+[params.social]
+	GitHub = "pallcard"
+#	Twitter = "xxoo"
+	Email   = "18162327131@163.com"
+#	Instagram = "xxoo"
+	Wechat = "/images/wechat.png"  # Wechat QRcode image
+#	Facebook = "xxoo"
+#	Telegram = "xxoo"
+#	Dribbble = "xxoo"
+#	Medium = "xxoo"
+  
+[menu]
+  [[menu.main]]
+    name = "博客"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "分类"
+    url = "/categories/"
+    weight = 2
+  [[menu.main]]
+    name = "标签"
+    url = "/tags/"
+    weight = 3
+  [[menu.main]]
+    name = "关于"
+    url = "/about/"
+    weight = 4
